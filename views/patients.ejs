@@ -1,0 +1,21 @@
+ <table>
+    <thead>
+        <tr>
+            <td>patient_id</td>
+            <td>first_name</td>
+            <td>last_name</td>
+            <td>date_of_birth</td>
+
+        </tr>
+    </thead>
+    <tbody>
+        <% patients.forEach(patient => { %>
+            <tr>
+                <td><%= patient.patient_id %></td>
+                <td><%= patient.first_name %></td>
+                <td><%= patient.last_name %></td>
+                <td><%= patient.date_of_birth %></td>
+            </tr>
+        <% }); %>
+    </tbody>
+ </table>
